@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Valentine ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: dark-blue;
+    }
+    .card {
+      background: rgba(255,255,255,0.2);
+      padding: 50px;
+      border-radius: 25px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    }
+    button {
+      padding: 14px 30px;
+      margin: 15px;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+    .no {
+      background: #ffffff;
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>What's up xusi Pema 💕</h1>
+    <p id="question">
+      <b>Would you be my valentine…?</b>
+    </p>
+
+    <button class="yes" onclick="yes()">Yes 💖</button>
+    <button class="no" onclick="no()">No 🙈</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.getElementById("question").innerHTML =
+        "Tahatheyo yes garxas vanara😄<br><br>Timi ta mero paran hau ni maya.<br>Happy Valentine’s Day Babe Love you ❤️";
+    }
+
+    function no() {
+      document.getElementById("question").innerHTML =
+        "Ta moris ava xusi pakh 😄<br><br>Try again jaa ";
+    }
+  </script>
+
+</body>
+</html>
